@@ -33,6 +33,8 @@ public class QUIZFABIANSANCHEZ {
     }
     
 }
+
+
 -- Valor de hipotenusa
 
 package javaapplication2;
@@ -85,6 +87,48 @@ public class Ciclo_for {
                System.out.println("Comsion ganada en el mes es de: "+mes); 
             }
         }
+    }
+    
+}
+--trabajando con While
+
+
+package ejercicio.pkgwhile;
+import java.util.Scanner;
+public class EjercicioWHILE {
+
+   
+    public static void main(String[] args) {
+        Scanner leer =new Scanner(System.in);
+        String doc="-1", nombre;
+        int tipo_vende;
+        double ventas_mes, comiciones ;
+        
+        System.out.println("Ingrese el numero de Cedula ");
+        doc=leer.next();
+        while(!doc.equals("999")){
+            System.out.println("Ingrese el nombre ");
+            nombre=leer.next();
+            System.out.println("Ingrese el tipo de vendedor. 1=Puerta o 2=Ejecutivo ");
+            tipo_vende=leer.nextInt();
+            System.out.println("Ingrese las ventas del mes ");
+            ventas_mes=leer.nextDouble();
+            
+            if (tipo_vende==1){
+                comiciones=ventas_mes*0.20;
+            }
+            else{
+                comiciones=ventas_mes*0.30;
+            }
+            System.out.println("La comicion es $"+comiciones);
+            System.out.println("---------------------------");
+            System.out.println("Ingrese el numero de Cedula ");
+            doc=leer.next();
+            
+        }
+        System.out.println("Fin de programa.");
+        
+        
     }
     
 }
