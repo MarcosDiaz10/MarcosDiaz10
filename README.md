@@ -133,7 +133,7 @@ public class EjercicioWHILE {
     
 }
 
-
+-- Saber cuantos son pares y cuantos son impares y cual es la suma de cada uno
 
 package javaapplication5;
 import java.util.Scanner;
