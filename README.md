@@ -133,7 +133,7 @@ public class EjercicioWHILE {
     
 }
 
--- Saber cuantos son pares y cuantos son impares y cual es la suma de cada uno
+-- manejando arreglos para saber cuantos son pares y cuantos son impares y cual es la suma de cada uno
 
 package javaapplication5;
 import java.util.Scanner;
@@ -153,6 +153,42 @@ public class JavaApplication5 {
            else{
                contador_impar+=1;
                suma_impar=suma_impar+numero;
+           }
+           
+       }
+        System.out.println("Cantidad de pares es: "+contador_par);
+        System.out.println("Cantidad de pares es: "+contador_impar);
+
+        System.out.println("la suma de los pares es: "+suma_par);
+        System.out.println("la suma de los pares es: "+suma_impar);
+        
+        
+    }
+    
+}
+
+
+-- Saber cuantos son pares y cuantos son impares y cual es la suma de cada uno
+
+package javaapplication5;
+import java.util.Scanner;
+public class JavaApplication5 {
+
+    public static void main(String[] args) {
+       Scanner leer=new Scanner(System.in);
+       int[] numero=new int[6];
+       int contador_par=0,contador_impar=0,suma_par = 0,suma_impar = 0;
+       
+       for (int i=0; i<numero.length; i++){
+           System.out.println("Ingrese un numero ");
+           numero[i]=leer.nextInt();
+           if (numero[i]%2==0){
+               contador_par+=1;
+               suma_par=suma_par+numero[i];
+           }
+           else{
+               contador_impar+=1;
+               suma_impar=suma_impar+numero[i];
            }
            
        }
