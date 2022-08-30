@@ -132,3 +132,38 @@ public class EjercicioWHILE {
     }
     
 }
+
+
+
+package javaapplication5;
+import java.util.Scanner;
+public class JavaApplication5 {
+
+    public static void main(String[] args) {
+       Scanner leer=new Scanner(System.in);
+       int contador_par=0,contador_impar=0,suma_par = 0,suma_impar = 0;
+       
+       for (int i=1; i<7; i++){
+           System.out.println("Ingrese el numero "+i);
+           int numero=leer.nextInt();
+           if (numero%2==0){
+               contador_par+=1;
+               suma_par=suma_par+numero;
+           }
+           else{
+               contador_impar+=1;
+               suma_impar=suma_impar+numero;
+           }
+           
+       }
+        System.out.println("Cantidad de pares es: "+contador_par);
+        System.out.println("Cantidad de pares es: "+contador_impar);
+
+        System.out.println("la suma de los pares es: "+suma_par);
+        System.out.println("la suma de los pares es: "+suma_impar);
+        
+        
+    }
+    
+}
+
