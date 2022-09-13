@@ -203,3 +203,23 @@ public class JavaApplication5 {
     
 }
 
+--Parcial de poo
+
+ public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+        
+        System.out.println("Ingrese un numero");
+        long numero=leer.nextLong();
+                
+        while(numero!=(1)){
+            if(numero%2==0){
+            numero=numero/2;
+            System.out.println(numero+" ");
+            }
+            else{
+            numero=(numero*3)+1;
+                System.out.println(numero+" ");
+            }
+        }
+        System.out.println("");
+    }
